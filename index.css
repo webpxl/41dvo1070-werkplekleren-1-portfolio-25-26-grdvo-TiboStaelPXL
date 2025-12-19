@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+
+
+}
+.page-one{
+    background-color: green;
+    background-size: cover;
+    height: 25vh;
+    h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        font-size: 8vh;
+
+
+    }
+    article{
+        background-image: url("assets/hybrid-storytellers-RMYwNoKykQY-unsplash.jpg");
+        background-size: cover;
+        height: 100vh;
+
+    }
+    footer{
+        background-color: green;
+        background-size: cover;
+    }
+
+
+}
