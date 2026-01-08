@@ -6,11 +6,13 @@
 .page-one{
     background-image: url("assets/hybrid-storytellers-RMYwNoKykQY-unsplash.jpg");
     background-size: cover;
-    height: 100vh;
+    height: 150h;
+    position: relative;
+    transition: background-image 0.5s ease-in-out;
 
 }
 
-/* corrected selector for h2 inside .page-one */
+
 .page-one h2 {
     display: flex;
     justify-content: center;
@@ -20,13 +22,45 @@
     font-family: "Droid Sans";
 }
 
-/* fix footer paragraph to bottom-left of the screen */
-footer p {
-    position: fixed;
+
+.page-one footer p {
+    position: absolute;
     left: 0;
     bottom: 0;
     margin: 0;
     padding: 0.5rem 1rem;
     z-index: 1000;
     color: white;
+}
+
+
+.page-two {
+    text-align: center;
+    padding: 2rem 1rem;
+    height: 50vh;
+    background-color: lightgray;
+    background-size: cover;
+}
+
+.page-two h1 {
+    margin: 0 auto;
+    display: inline-block;
+    font-family: "Droid Sans";
+    font-size: 8vh;
+}
+.contact-info{
+    margin-top: 2rem;
+    font-size: 2.5vh;
+    font-family: "Droid Sans";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 4rem;
+
+}
+.contact-info div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
 }
