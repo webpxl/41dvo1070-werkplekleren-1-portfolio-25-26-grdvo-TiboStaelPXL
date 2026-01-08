@@ -6,7 +6,7 @@
 .page-one{
     background-image: url("assets/hybrid-storytellers-RMYwNoKykQY-unsplash.jpg");
     background-size: cover;
-    height: 150h;
+    height: 150vh;
     position: relative;
     transition: background-image 0.5s ease-in-out;
 
