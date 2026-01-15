@@ -32,15 +32,17 @@ header {
     text-decoration: underline;
 }
 .hero {
+    min-height: calc(100vh - 80px);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 80px 60px;
-    min-height: calc(100vh - 100px);
+    justify-content: center;
+    gap: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .hero-text {
-    max-width: 600px;
+    transform: translateY(-80px);
 }
 
 .hero-text h1 {
@@ -54,10 +56,202 @@ header {
     line-height: 1.5;
 }
 
+.hero-image{
+    align-self: flex-end;
+}
+
 
 .hero-image img {
-    max-height: 600px;
+    max-height: 90vh;
     width: auto;
+}
+/* De sectie container */
+.about-me {
+    background-color: blue; /* Matcht met je .Home achtergrond */
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: black; /* Kleur uit je voorbeeld */
+}
+
+/* De Grid layout */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+/* De witte kaarten */
+.about-card {
+    background-color: white;
+    color: black;
+    padding: 30px;
+    border-radius: 40px; /* Mooie ronde hoeken zoals in de afbeelding */
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.about-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.about-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* De grote kaart onderaan */
+.full-width {
+    grid-column: span 3;
+    text-align: left;
+    padding: 40px;
+}
+
+/* De afbeeldingen */
+.about-photo img {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 10px;
+}
+
+/* De rotaties voor het speelse effect */
+.rotate-right { transform: rotate(10deg); }
+.rotate-left { transform: rotate(-10deg); }
+.rotate-right-slight { transform: rotate(5deg); }
+
+/* Zorg dat het er op mobiel ook goed uitziet */
+@media (max-width: 900px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    .full-width {
+        grid-column: span 1;
+    }
+    .about-photo {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* De volledige sectie met de blauwe achtergrond */
+.project-1 {
+    background-color: #0000FF; /* Het felle blauw uit je screenshot */
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.p1-container {
+    width: 100%;
+    max-width: 2000px;
+}
+
+
+.p1-header {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.p1-main-title {
+    font-size: 48px;
+    margin: 0;
+    color: #000;
+}
+
+.p1-sub-title {
+    font-size: 26px;
+    font-weight: normal;
+    margin-top: 5px;
+    color: #000;
+}
+
+/* Zorgt dat de inhoud naar het midden van het scherm gaat */
+.p1-centered-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* De layout met kolommen */
+.p1-layout {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 400px; /* Ruimte tussen links en rechts */
+    align-items: start;
+}
+
+.p1-col-left, .p1-col-right {
+    display: flex;
+    flex-direction: column;
+    gap: 100px; /* Ruimte tussen de blokjes */
+}
+
+.p1-col-right {
+    align-items: center; /* Zorgt dat het blokje exact onder de foto staat */
+}
+
+/* De witte capsule blokjes */
+.p1-bubble {
+    background: white;
+    border-radius: 45px;
+    padding: 20px 60px;
+    color: black;
+    width: fit-content;
+    max-width: 480px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.p1-bubble h3 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.p1-bubble p, .p1-bubble li {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Foto styling */
+.p1-image-wrapper {
+    margin-top: -20px;
+}
+
+.p1-rotated-img {
+    width: 280px;
+    height: auto;
+    border: 1px solid #333;
+    transform: rotate(8deg); /* De exacte schuinte uit de foto */
+    box-shadow: 15px 15px 30px rgba(0,0,0,0.4);
+}
+.project-2 {
+    background-color: #0000FF; /* Het felle blauw uit je screenshot */
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.project-3{
+    background-color: #0000FF;
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
 
