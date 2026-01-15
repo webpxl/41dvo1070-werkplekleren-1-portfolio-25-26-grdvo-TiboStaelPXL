@@ -8,9 +8,16 @@
 
 
 .Home{
-    background-color: blue;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg, #add8e6 80%, lightgray 20%);
+    min-height: 100vh;
+    color: #1a1a1a;
+    font-family: 'Poppins';
+    margin: 0;
+}
+.home-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
 }
 
 header {
@@ -25,7 +32,7 @@ header {
 
 .nav a {
     text-decoration: none;
-    color: white;
+    color:  #1a1a1a;
     font-size: 16px;
 }
 .nav a:hover {
@@ -36,54 +43,63 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 80px;
-    max-width: 1200px;
+    gap: 10px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
 .hero-text {
-    transform: translateY(-80px);
+    transform: translateY(-20px);
+    flex: 0 0 520px;
 }
+
 
 .hero-text h1 {
     font-size: 56px;
     font-weight: 700;
     margin-bottom: 25px;
+    line-height: 1.1;
 }
 
 .hero-text p {
     font-size: 24px;
     line-height: 1.5;
+
 }
 
 .hero-image{
     align-self: flex-end;
+    flex: 1;
 }
 
 
 .hero-image img {
     max-height: 90vh;
     width: auto;
+    display: block;
+    margin-left: 0; /* Brengt de afbeelding iets naar links */
 }
 /* De sectie container */
 .about-me {
-    background-color: blue; /* Matcht met je .Home achtergrond */
-    padding: 80px 60px;
-    text-align: center;
+    background: linear-gradient(180deg, #add8e6 80%, lightgray 20%);
+    padding: 120px 120px;
+    font-family: 'Poppins';
 }
 
 .about-title {
-    font-size: 48px;
-    margin-bottom: 40px;
-    color: black; /* Kleur uit je voorbeeld */
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    color: black;
+    text-align: center;
 }
 
 /* De Grid layout */
 .about-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    max-width: 1200px;
+    gap: 80px 100px;
+    max-width: 1100px;
     margin: 0 auto;
     align-items: center;
 }
@@ -91,38 +107,42 @@ header {
 /* De witte kaarten */
 .about-card {
     background-color: white;
-    color: black;
     padding: 30px;
-    border-radius: 40px; /* Mooie ronde hoeken zoals in de afbeelding */
-    min-height: 180px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease;
+    height: 100%;/* Mooie ronde hoeken zoals in de afbeelding */
+
+}
+.about-card:hover {
+    transform: translateY(-10px);
 }
 
 .about-card h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
+    font-size: 28px;
+    line-height: 1.6;
+    color: #444;
 }
 
-.about-card ul {
-    list-style: none;
-    padding: 0;
+.about-card p, .about-card li {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
 }
-
-/* De grote kaart onderaan */
-.full-width {
-    grid-column: span 3;
-    text-align: left;
-    padding: 40px;
+.about-photo {
+    display: flex;
+    justify-content: center;
 }
-
-/* De afbeeldingen */
 .about-photo img {
     width: 100%;
-    max-width: 280px;
-    border-radius: 10px;
+    max-width: 250px;
+    border: 12px solid white;
+    border-radius: 5px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.full-width {
+    grid-column: span 3;
+    margin-top: 40px;
 }
 
 /* De rotaties voor het speelse effect */
@@ -146,9 +166,9 @@ header {
 
 /* De volledige sectie met de blauwe achtergrond */
 .project-1 {
-    background-color: #0000FF; /* Het felle blauw uit je screenshot */
+    background: linear-gradient(180deg, #add8e6 80%, lightgray 20%);
     padding: 60px 20px;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins';
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -213,6 +233,11 @@ header {
     max-width: 480px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
+.p1-bubble:hover {
+    /* De bubble komt iets omhoog en de schaduw wordt zachter/dieper */
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
 
 .p1-bubble h3 {
     text-align: center;
@@ -237,18 +262,24 @@ header {
     transform: rotate(8deg); /* De exacte schuinte uit de foto */
     box-shadow: 15px 15px 30px rgba(0,0,0,0.4);
 }
+.p1-rotated-img:hover {
+    /* De foto draait een klein beetje terug en komt 'los' van de pagina */
+    transform: rotate(0deg) scale(1.1);
+    box-shadow: 20px 20px 40px rgba(0,0,0,0.3);
+    z-index: 10; /* Zorgt dat hij boven andere elementen zweeft */
+}
 .project-2 {
-    background-color: #0000FF; /* Het felle blauw uit je screenshot */
+    background: linear-gradient(180deg, #add8e6 80%, lightgray 20%);
     padding: 60px 20px;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins';
     min-height: 100vh;
     display: flex;
     justify-content: center;
 }
 .project-3{
-    background-color: #0000FF;
+    background: linear-gradient(180deg, #add8e6 80%, lightgray 20%);
     padding: 60px 20px;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins';
     min-height: 100vh;
     display: flex;
     justify-content: center;
