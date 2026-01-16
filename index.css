@@ -96,7 +96,7 @@ header {
     max-height: 90vh;
     width: auto;
     display: block;
-    margin-left: 0; /* Brengt de afbeelding iets naar links */
+    margin-left: 0;
 }
 /* De sectie container */
 .about-me {
@@ -106,15 +106,15 @@ header {
 }
 
 .about-title {
-    font-size: 42px;                  /* iets compacter, modernere look */
-    font-weight: 800;                 /* iets vetter voor meer impact */
-    margin-bottom: 30px;              /* iets minder, strakker */
-    color: #1a1a1a;                   /* zachter zwart voor oogcomfort */
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: #1a1a1a;
     text-align: center;
-    line-height: 1.2;                 /* betere verticale spacing */
-    letter-spacing: 1px;              /* subtiel voor elegantie */
-    text-transform: uppercase;        /* krachtigere uitstraling */
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.08); /* subtiele diepte */
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.08);
 }
 
 
@@ -130,21 +130,21 @@ header {
 
 /* De witte kaarten */
 .about-card {
-    background-color: #ffffff;                       /* fris wit blijft */
-    padding: 28px 24px;                              /* iets meer verticale padding voor ademruimte */
-    border-radius: 25px;                             /* iets subtieler afgerond voor modernere look */
-    box-shadow: 0 6px 15px rgba(0,0,0,0.08),        /* subtielere, meer natuurlijke schaduw */
+    background-color: #ffffff;
+    padding: 28px 24px;
+    border-radius: 25px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08),
     0 3px 6px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* vloeiendere hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
-    display: flex;                                   /* voor consistente alignment van inhoud */
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
 /* Hover effect */
 .about-card:hover {
-    transform: translateY(-8px) scale(1.02);         /* subtiel omhoog en licht vergroten */
+    transform: translateY(-8px) scale(1.02);
     box-shadow: 0 12px 25px rgba(0,0,0,0.12),
     0 6px 12px rgba(0,0,0,0.06);
 }
@@ -154,13 +154,13 @@ header {
 }
 
 .about-card h3 {
-    font-size: 22px;                 /* iets compacter voor moderne look */
-    font-weight: 700;                 /* vetter voor hiërarchie */
-    line-height: 1.4;                 /* strakker voor overzicht */
-    color: #1a1a1a;                   /* iets donkerder en moderner zwart */
-    margin-bottom: 12px;              /* ruimte tussen titel en tekst */
-    letter-spacing: 0.5px;            /* subtiele spreiding voor elegantie */
-    text-align: center;                /* optioneel: centreren voor visuele balans */
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+    text-align: center;
 }
 
 
@@ -181,7 +181,7 @@ header {
     margin-top: 20px;
 }
 
-/* De rotaties voor het speelse effect */
+
 .rotate-right { transform: rotate(10deg); }
 .rotate-left { transform: rotate(-10deg); }
 .rotate-right-slight { transform: rotate(5deg); }
@@ -200,7 +200,7 @@ header {
 }
 
 
-/* De volledige sectie met de blauwe achtergrond */
+
 .project-1 {
     background: linear-gradient(180deg, #add8e6 80%, lightgray 20%);
     padding: 60px 20px;
@@ -215,7 +215,6 @@ header {
     max-width: 2000px;
 }
 
-
 .p1-header {
     text-align: left;
     margin-bottom: 40px;
@@ -223,13 +222,13 @@ header {
 
 .p1-main-title {
     font-size: 48px;
-    font-weight: 800;           /* iets vetter voor meer impact */
-    color: #1a1a1a;             /* iets zachter zwart voor oogcomfort */
-    margin: 0 0 20px 40px;         /* margin bottom voor ademruimte */
-    line-height: 1.2;           /* beter leesbaar */
-    letter-spacing: 1px;        /* subtiele spreiding voor stijl */
-    text-transform: uppercase;  /* geeft een krachtige uitstraling */
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* subtiele diepte */
+    font-weight: 800;
+    color: #1a1a1a;
+    margin: 0 0 20px 40px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
 .p1-sub-title {
@@ -239,113 +238,87 @@ header {
     color: #333;
     line-height: 1.4;
     letter-spacing: 0.5px;
-    font-family: 'Montserrat', sans-serif;
 }
 
-/* Zorgt dat de inhoud naar het midden van het scherm gaat */
+
 .p1-centered-content {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-/* De layout met kolommen */
-/* Layout container */
 .p1-layout {
     display: grid;
-    grid-template-columns: repeat(2, auto);  /* twee kolommen */
-    gap: 100px 100px;                          /* minder ruimte tussen bubbles */
+    grid-template-columns: repeat(2, auto);
+    gap: 60px 100px;
     align-items: start;
-    justify-content: center;                 /* alles gecentreerd */
+    justify-content: center;
 }
 
-/* Kolommen */
 .p1-col-left, .p1-col-right {
     display: flex;
     flex-direction: column;
-    gap: 50px;                               /* minder verticale ruimte tussen bubbles */
+    gap: 40px;
+    position: relative;
 }
 
-/* Bubbles */
+
 .p1-bubble {
+    background: #ffffff;
+    border-radius: 35px;
+    padding: 25px 40px;
+    color: #1a1a1a;
     width: 100%;
-    max-width: 400px;                        /* iets smaller zodat ze dichter bij elkaar staan */
-    padding: 25px 30px;                       /* compactere padding */
-    border-radius: 25px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.12), 0 3px 6px rgba(0,0,0,0.08);
+    max-width: 450px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15), 0 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 2;
 }
 
 .p1-bubble:hover {
-    transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.12), 0 5px 10px rgba(0,0,0,0.08);
-}
-
-
-/* De witte capsule blokjes */
-.p1-bubble {
-    background: #ffffff;                       /* fris wit blijft */
-    border-radius: 35px;                       /* iets minder extreem voor modernere look */
-    padding: 25px 40px;                        /* verticale padding iets groter, horizontaal compacter */
-    color: #1a1a1a;                            /* iets zachter zwart voor oogcomfort */
-    width: 100%;                               /* past mooi binnen container */
-    max-width: 450px;                           /* iets strakker dan 480px */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15),   /* subtiele dubbele schaduw voor diepte */
-    0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth hover effecten */
-}
-
-/* Hover effect */
-.p1-bubble:hover {
-    transform: translateY(-8px) scale(1.02);  /* subtiel omhoog en licht vergroten */
+    transform: translateY(-8px) scale(1.02);
     box-shadow: 0 15px 30px rgba(0,0,0,0.2), 0 8px 12px rgba(0,0,0,0.1);
+    z-index: 20;
 }
 
 .p1-bubble h3 {
     text-align: center;
-    font-size: 25px;                  /* iets compacter dan 22px voor balans */
-    font-weight: 600;                 /* iets vetter voor betere hiërarchie */
-    margin-bottom: 12px;              /* iets meer ruimte tussen titel en tekst */
-    color: #1a1a1a;                   /* zacht zwart voor leesbaarheid */
-    letter-spacing: 0.5px;            /* subtiele spreiding voor elegantie */
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 12px;
 }
 
-.p1-bubble p,
-.p1-bubble li {
-    font-size: 15px;                  /* iets groter dan 14px, makkelijker lezen */
-    line-height: 1.6;                 /* extra ruimte tussen regels voor comfort */
-    color: #333;                       /* iets zachter dan puur zwart */
-    margin-bottom: 8px;               /* kleine spacing tussen paragrafen/lijstitems */
+.p1-bubble p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 8px;
 }
 
-.p1-bubble ul {
-    padding-left: 20px;               /* nette inspringing van lijstitems */
-    margin: 0;                         /* geen extra margin om bubble compact te houden */
-}
-
-/* Foto styling */
-.p1-image-wrapper {
-    margin-top: -20px;
-    display: flex;
-    justify-content: center; /* altijd mooi gecentreerd */
-    transition: transform 0.4s ease; /* voor subtiel hover effect */
-}
 
 .p1-rotated-img {
     width: 400px;
-    max-width: 100%;              /* beter voor kleinere schermen */
+    max-width: 100%;
     height: auto;
-    border-radius: 12px;           /* afgeronde hoeken voor modernere look */
-    border: 1px solid rgba(0,0,0,0.2); /* zachtere rand */
-    transform: rotate(6deg);       /* iets subtieler dan 8deg */
-    box-shadow: 5px 10px 20px rgba(0,0,0,0.25); /* lichtere schaduw */
-    transition: transform 0.4s ease, box-shadow 0.4s ease; /* soepel effect */
-    cursor: pointer;               /* laat zien dat het interactief is */
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.2);
+    transform: rotate(6deg);
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.25);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, z-index 0s;
+    cursor: pointer;
+
+
+    position: relative;
+    z-index: 1;
+    margin-bottom: -100px;
+    margin-top: 20px;
 }
 
 .p1-rotated-img:hover {
-    transform: rotate(0deg) scale(1.08); /* subtieler en eleganter dan 1.1 */
+    transform: rotate(0deg) scale(1.08);
     box-shadow: 15px 20px 35px rgba(0,0,0,0.25);
+    z-index: 5; /* Komt naar voren als je eroverheen gaat */
 }
 
 
@@ -367,13 +340,128 @@ header {
 }
 footer{
     background: linear-gradient(180deg, #add8e6 80%, lightgray 20%);
-
     text-align: center;
     padding: 20px 0;
     font-family: 'Poppins', sans-serif;
     color: #333;
     margin-top: 40px;
 }
+.locker-room {
+    background-image: url("assets/lockerroom.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 5vw;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    /* TOEVOEGEN: Dit is het anker voor je tekstballon */
+    position: relative;
+}
+
+/* De man container */
+.male-wrestler-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Verwijder de margin-left hier om hem links te houden */
+    margin-bottom: 0;
+}
+
+/* De vrouw container */
+.female-wrestler-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 200px; /* schuift female iets naar rechts */
+    margin-bottom: 0;
+}
+
+/* De man: Grootte */
+.male-wrestler-container img {
+    height: 85vh;
+    width: auto;
+    display: block;
+    margin-bottom: 0;
+    transform: translateY(20px); /* duwt ze 20px lager */
+}
+
+/* De vrouw: Kleiner maken */
+.female-wrestler-container img {
+    height: 70vh; /* Iets kleiner dan de man */
+    width: auto;
+    display: block;
+    margin-bottom: 0;
+    transform: translateY(20px); /* duwt ze 20px lager */
+}
+.text-balloon-male {
+    position: absolute;
+        bottom: 500px;
+        right: 1000px;
+        background: white;
+        padding: 15px 20px;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        max-width: 250px;
+        font-size: 14px;
+        line-height: 1.4;
+        z-index: 10;
+
+}
+.text-balloon-male::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent white;
+}
+.text-balloon-female{
+    position: absolute;
+    bottom: 450px;
+    right: 350px;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    max-width: 250px;
+    font-size: 14px;
+    line-height: 1.4;
+    z-index: 10;
+
+}
+.text-balloon-female::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent white;
+}
+.hidden {
+    display: none ;
+}
+
+
+.text-balloon-male, .text-balloon-female {
+    cursor: default;
+    transition: opacity 0.3s ease;
+}
+
+.click-figure {
+    cursor: pointer;
+}
+
+
+
 
 
 
