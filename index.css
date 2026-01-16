@@ -46,7 +46,7 @@ header {
     background: linear-gradient(180deg, #add8e6 80%, lightgray 20%);
     min-height: 100vh;
     color: #1a1a1a;
-    font-family: 'Poppins';
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding-top: 80px;
 }
@@ -102,16 +102,21 @@ header {
 .about-me {
     background: linear-gradient(180deg, #add8e6 80%, lightgray 20%);
     padding: 80px 40px;
-    font-family: 'Poppins';
+    font-family: 'Montserrat', sans-serif;
 }
 
 .about-title {
-    font-size: 44px;
-    font-weight: 700;
-    margin-bottom: 40px;
-    color: black;
+    font-size: 42px;                  /* iets compacter, modernere look */
+    font-weight: 800;                 /* iets vetter voor meer impact */
+    margin-bottom: 30px;              /* iets minder, strakker */
+    color: #1a1a1a;                   /* zachter zwart voor oogcomfort */
     text-align: center;
+    line-height: 1.2;                 /* betere verticale spacing */
+    letter-spacing: 1px;              /* subtiel voor elegantie */
+    text-transform: uppercase;        /* krachtigere uitstraling */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.08); /* subtiele diepte */
 }
+
 
 /* De Grid layout */
 .about-grid {
@@ -125,29 +130,41 @@ header {
 
 /* De witte kaarten */
 .about-card {
-    background-color: white;
-    padding: 24px;
-    border-radius: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-    transition: transform 0.3s ease;
-    height: 100%;/* Mooie ronde hoeken zoals in de afbeelding */
-
+    background-color: #ffffff;                       /* fris wit blijft */
+    padding: 28px 24px;                              /* iets meer verticale padding voor ademruimte */
+    border-radius: 25px;                             /* iets subtieler afgerond voor modernere look */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08),        /* subtielere, meer natuurlijke schaduw */
+    0 3px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* vloeiendere hover */
+    height: 100%;
+    display: flex;                                   /* voor consistente alignment van inhoud */
+    flex-direction: column;
+    justify-content: flex-start;
 }
+
+/* Hover effect */
+.about-card:hover {
+    transform: translateY(-8px) scale(1.02);         /* subtiel omhoog en licht vergroten */
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12),
+    0 6px 12px rgba(0,0,0,0.06);
+}
+
 .about-card:hover {
     transform: translateY(-10px);
 }
 
 .about-card h3 {
-    font-size: 24px;
-    line-height: 1.6;
-    color: #444;
+    font-size: 22px;                 /* iets compacter voor moderne look */
+    font-weight: 700;                 /* vetter voor hiërarchie */
+    line-height: 1.4;                 /* strakker voor overzicht */
+    color: #1a1a1a;                   /* iets donkerder en moderner zwart */
+    margin-bottom: 12px;              /* ruimte tussen titel en tekst */
+    letter-spacing: 0.5px;            /* subtiele spreiding voor elegantie */
+    text-align: center;                /* optioneel: centreren voor visuele balans */
 }
 
-.about-card p, .about-card li {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #444;
-}
+
+
 .about-photo {
     display: flex;
     justify-content: center;
@@ -187,7 +204,7 @@ header {
 .project-1 {
     background: linear-gradient(180deg, #add8e6 80%, lightgray 20%);
     padding: 60px 20px;
-    font-family: 'Poppins';
+    font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -206,15 +223,23 @@ header {
 
 .p1-main-title {
     font-size: 48px;
-    margin: 0;
-    color: #000;
+    font-weight: 800;           /* iets vetter voor meer impact */
+    color: #1a1a1a;             /* iets zachter zwart voor oogcomfort */
+    margin: 0 0 20px 40px;         /* margin bottom voor ademruimte */
+    line-height: 1.2;           /* beter leesbaar */
+    letter-spacing: 1px;        /* subtiele spreiding voor stijl */
+    text-transform: uppercase;  /* geeft een krachtige uitstraling */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* subtiele diepte */
 }
 
 .p1-sub-title {
-    font-size: 26px;
-    font-weight: normal;
-    margin-top: 5px;
-    color: #000;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 10px 0 0 40px;
+    color: #333;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Zorgt dat de inhoud naar het midden van het scherm gaat */
@@ -225,72 +250,109 @@ header {
 }
 
 /* De layout met kolommen */
+/* Layout container */
 .p1-layout {
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 400px; /* Ruimte tussen links en rechts */
+    grid-template-columns: repeat(2, auto);  /* twee kolommen */
+    gap: 100px 100px;                          /* minder ruimte tussen bubbles */
     align-items: start;
+    justify-content: center;                 /* alles gecentreerd */
 }
 
+/* Kolommen */
 .p1-col-left, .p1-col-right {
     display: flex;
     flex-direction: column;
-    gap: 100px; /* Ruimte tussen de blokjes */
+    gap: 50px;                               /* minder verticale ruimte tussen bubbles */
 }
 
-.p1-col-right {
-    align-items: center; /* Zorgt dat het blokje exact onder de foto staat */
+/* Bubbles */
+.p1-bubble {
+    width: 100%;
+    max-width: 400px;                        /* iets smaller zodat ze dichter bij elkaar staan */
+    padding: 25px 30px;                       /* compactere padding */
+    border-radius: 25px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12), 0 3px 6px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.p1-bubble:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12), 0 5px 10px rgba(0,0,0,0.08);
+}
+
 
 /* De witte capsule blokjes */
 .p1-bubble {
-    background: white;
-    border-radius: 45px;
-    padding: 20px 60px;
-    color: black;
-    width: fit-content;
-    max-width: 480px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    background: #ffffff;                       /* fris wit blijft */
+    border-radius: 35px;                       /* iets minder extreem voor modernere look */
+    padding: 25px 40px;                        /* verticale padding iets groter, horizontaal compacter */
+    color: #1a1a1a;                            /* iets zachter zwart voor oogcomfort */
+    width: 100%;                               /* past mooi binnen container */
+    max-width: 450px;                           /* iets strakker dan 480px */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15),   /* subtiele dubbele schaduw voor diepte */
+    0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth hover effecten */
 }
+
+/* Hover effect */
 .p1-bubble:hover {
-    /* De bubble komt iets omhoog en de schaduw wordt zachter/dieper */
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    transform: translateY(-8px) scale(1.02);  /* subtiel omhoog en licht vergroten */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2), 0 8px 12px rgba(0,0,0,0.1);
 }
 
 .p1-bubble h3 {
     text-align: center;
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 25px;                  /* iets compacter dan 22px voor balans */
+    font-weight: 600;                 /* iets vetter voor betere hiërarchie */
+    margin-bottom: 12px;              /* iets meer ruimte tussen titel en tekst */
+    color: #1a1a1a;                   /* zacht zwart voor leesbaarheid */
+    letter-spacing: 0.5px;            /* subtiele spreiding voor elegantie */
 }
 
-.p1-bubble p, .p1-bubble li {
-    font-size: 14px;
-    line-height: 1.4;
+.p1-bubble p,
+.p1-bubble li {
+    font-size: 15px;                  /* iets groter dan 14px, makkelijker lezen */
+    line-height: 1.6;                 /* extra ruimte tussen regels voor comfort */
+    color: #333;                       /* iets zachter dan puur zwart */
+    margin-bottom: 8px;               /* kleine spacing tussen paragrafen/lijstitems */
+}
+
+.p1-bubble ul {
+    padding-left: 20px;               /* nette inspringing van lijstitems */
+    margin: 0;                         /* geen extra margin om bubble compact te houden */
 }
 
 /* Foto styling */
 .p1-image-wrapper {
     margin-top: -20px;
+    display: flex;
+    justify-content: center; /* altijd mooi gecentreerd */
+    transition: transform 0.4s ease; /* voor subtiel hover effect */
 }
 
 .p1-rotated-img {
-    width: 280px;
+    width: 400px;
+    max-width: 100%;              /* beter voor kleinere schermen */
     height: auto;
-    border: 1px solid #333;
-    transform: rotate(8deg); /* De exacte schuinte uit de foto */
-    box-shadow: 15px 15px 30px rgba(0,0,0,0.4);
+    border-radius: 12px;           /* afgeronde hoeken voor modernere look */
+    border: 1px solid rgba(0,0,0,0.2); /* zachtere rand */
+    transform: rotate(6deg);       /* iets subtieler dan 8deg */
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.25); /* lichtere schaduw */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* soepel effect */
+    cursor: pointer;               /* laat zien dat het interactief is */
 }
+
 .p1-rotated-img:hover {
-    /* De foto draait een klein beetje terug en komt 'los' van de pagina */
-    transform: rotate(0deg) scale(1.1);
-    box-shadow: 20px 20px 40px rgba(0,0,0,0.3);
-    z-index: 10; /* Zorgt dat hij boven andere elementen zweeft */
+    transform: rotate(0deg) scale(1.08); /* subtieler en eleganter dan 1.1 */
+    box-shadow: 15px 20px 35px rgba(0,0,0,0.25);
 }
+
+
 .project-2 {
     background: linear-gradient(180deg, #add8e6 80%, lightgray 20%);
     padding: 60px 20px;
-    font-family: 'Poppins';
+    font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -298,10 +360,19 @@ header {
 .project-3{
     background: linear-gradient(180deg, #add8e6 80%, lightgray 20%);
     padding: 60px 20px;
-    font-family: 'Poppins';
+    font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
     display: flex;
     justify-content: center;
+}
+footer{
+    background: linear-gradient(180deg, #add8e6 80%, lightgray 20%);
+
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin-top: 40px;
 }
 
 
