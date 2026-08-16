@@ -1,272 +1,497 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link  rel="stylesheet" href="index.css">
-    <script  defer src="index.js"></script>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tibo Staels | Portfolio</title>
 
-<body>
-<header>
-    <nav class="nav">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#project1">Project 1</a></li>
-            <li><a href="#project2">Project 2</a></li>
-            <li><a href="portfolio/index.html" target="_blank"> Reflectie</a></li>
-        </ul>
-    </nav>
-</header>
 
-<section id="home" class="Home">
-    <div class="home-inner">
-        <main>
-            <section class="hero">
-                <div class="hero-text">
-                    <h1>Hallo, ik ben Tibo</h1>
+    <link rel="stylesheet" href="index.css">
+    <header class="site-header">
+        <nav class="nav" aria-label="Hoofdnavigatie">
+
+            <a href="#home" class="logo">
+                <span>Tibo Staels</span>
+            </a>
+
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Meer over mij</a></li>
+                <li><a href="#project1">Project 1</a></li>
+                <li><a href="#project2">Project 2</a></li>
+                <li><a href="#project3">Project 3</a></li>
+                <li><a href="portfolio/index.html">Reflectie</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home" class="home">
+
+            <div class="home-inner">
+
+                <div class="hero">
+
+                    <div class="hero-text">
+                        <h1>Hallo, ik ben <span>Tibo</span></h1>
+
+                        <p>
+                            <strong>Student digitale vormgeving</strong><br>
+                            Creatief, leergierig en altijd op zoek naar sterke ideeën en slimme visuele oplossingen.
+                        </p>
+
+                        <div class="hero-buttons">
+                            <a href="#about" class="button">Meer over mij</a>
+                            <a href="#project1" class="button button-outline">Mijn projecten</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-image">
+                        <img src="assets/profielpicture.png" alt="Illustratie van Tibo">
+                    </div>
+
+                </div>
+
+                <!-- Drie kaarten onderaan zoals op de voorbeeldafbeelding -->
+                <div class="hero-cards">
+
+                    <a href="#about" class="info-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                        </div>
+                        <div class="card-text">
+                            <h3>Wie ben ik?</h3>
+                            <p>Leer mij beter kennen en ontdek wat mij motiveert.</p>
+                            <span class="card-link">Meer over mij →</span>
+                        </div>
+                    </a>
+
+                    <a href="#project1" class="info-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24"><path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"/></svg>
+                        </div>
+                        <div class="card-text">
+                            <h3>Mijn projecten</h3>
+                            <p>Een selectie van mijn werk en schoolprojecten.</p>
+                            <span class="card-link">Bekijk projecten →</span>
+                        </div>
+                    </a>
+
+                    <a href="portfolio/index.html" class="info-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
+                        </div>
+                        <div class="card-text">
+                            <h3>Mijn reflectie</h3>
+                            <p>Mijn groei, leerpunten en toekomstplannen.</p>
+                            <span class="card-link">Lees mijn reflectie →</span>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+    <section id="about" class="about-me">
+
+        <div class="section-container">
+
+            <h2 class="section-title">Meer over mij</h2>
+
+
+            <div class="about-grid">
+
+                <article class="about-card">
+                    <h3>Hobby's</h3>
+
                     <p>
-                        Student digitale vormgeving<br>
-                        Focus op webdevelopment & design
+                        Mijn hobby's omvatten het werken als jeugdtrainer,
+                        het spelen van videogames en het actief beoefenen
+                        van voetbal. Hiermee combineer ik mijn
+                        coachingsvaardigheden, teamwork en ontspanning.
                     </p>
+                </article>
+
+
+                <div class="about-photo rotate-right">
+                    <img
+                            src="assets/Trainer.jpeg"
+                            alt="Tibo als voetbaltrainer"
+                    >
                 </div>
 
-                <div class="hero-image">
-                    <img src="assets/profielpicture.png" alt="Illustratie van Tibo">
-                </div>
-            </section>
-        </main>
-    </div>
-</section>
 
-<section id="about" class="about-me">
-    <h2 class="about-title">About me</h2>
+                <article class="about-card">
+                    <h3>Diploma's</h3>
 
-    <div class="about-grid">
-        <div class="about-card">
-            <h3>Hobby's</h3>
-            <p>
-                Mijn hobby's omvatten het werken als jeugdtrainer, het spelen van videogames en het actief beoefenen van voetbal, waarmee ik zowel mijn coachingsvaardigheden als mijn teamwork en ontspanning combineer.
-            </p>
+                    <p>
+                        Ik heb een diploma behaald in Elektrotechnieken
+                        op secundair onderwijsniveau. Daarnaast heb ik
+                        de Initiator C-opleiding voor voetbal gevolgd.
+                        Hiermee heb ik zowel technische kennis als
+                        leiderschaps- en coachingvaardigheden ontwikkeld.
+                    </p>
+                </article>
 
-        </div>
 
-        <div class="about-photo rotate-right">
-            <img src="assets/Trainer.jpeg" alt="Training">
-        </div>
-
-        <div class="about-card">
-            <h3>Diploma's</h3>
-            <p>
-                Ik heb een diploma behaald in Elektrotechnieken op secundair onderwijsniveau en daarnaast de Initiator C-opleiding voor voetbal gevolgd, waarmee ik zowel technische kennis als leiderschaps- en coachingvaardigheden heb ontwikkeld.
-            </p>
-
-        </div>
-
-        <div class="about-photo rotate-left">
-            <img src="assets/mijnploeg.jpeg" alt="Team">
-        </div>
-
-        <div class="about-card">
-            <h3>Waarom</h3>
-            <p>
-                Ik koos deze opleiding oorspronkelijk met het doel om webdesigner te worden, omdat ik altijd gefascineerd ben geweest door visueel design en creatieve interfaces.
-                Tijdens het eerste semester ontdekte ik echter dat ik veel meer voldoening haal uit webdevelopment, waarbij ik niet alleen het ontwerp kan realiseren, maar ook de achterliggende functionaliteit kan bouwen en optimaliseren.
-                Deze ervaring heeft me doen beseffen dat ik het liefst werk aan projecten waar zowel design als techniek samenk
-
-        </div>
-
-        <div class="about-photo rotate-right-slight">
-            <img src="assets/WWEring.jpeg" alt="WWE">
-        </div>
-
-        <div class="about-card full-width">
-            <h3>Wie ben ik</h3>
-            <p>
-                Ik hou van films, series en WWE, omdat verhalen en entertainment <br>
-                mij echt aanspreken en me een moment van ontspanning bieden.
-                Daarnaast vind ik rust en plezier in stand-up comedy, wat me helpt om even te ontsnappen <br>
-                aan de dagelijkse druk.  In het dagelijks leven probeer ik rustig en bedachtzaam te blijven, maar ik kan droog zijn  ben soms snel op mijn tenen getrapt en durf af en toe ook een grote mond te hebben wanneer ik mijn mening wil laten horen.
-                Tegelijkertijd droom ik ervan om ooit naar Amerika te verhuizen, waar ik hoop nieuwe ervaringen op te doen en mijn passie voor entertainment en creativiteit verder te ontwikkelen.
-            </p>
-
-        </div>
-    </div>
-</section>
-
-<section id="project1" class="project-1">
-    <div class="p1-container">
-        <div class="p1-header">
-            <h1 class="p1-main-title">Project 1</h1>
-            <h2 class="p1-sub-title">GIP – Industriële kast</h2>
-        </div>
-
-        <div class="p1-centered-content">
-            <div class="p1-layout">
-                <div class="p1-col-left">
-                    <div class="p1-bubble">
-                        <h3>Doel</h3>
-                        <p>
-                            Een industriële kast opschonen door bestaande bekabeling overzichtelijk te ordenen, de installatie volledig te herbedraden waar nodig en verouderde of defecte componenten te vervangen, met als doel een veilige, efficiënte en professioneel afgewerkte elektrische opstelling te realiseren.
-                        </p>
-                    </div>
-
-                    <div class="p1-bubble">
-                        <h3>Hoe te werk</h3>
-                        <p>
-                            Eerst werd er een grondige analyse gemaakt van de onderdelen die vervangen moesten worden.
-                            Vervolgens werd de overbodige bekabeling verwijderd om meer overzicht en veiligheid te creëren.
-                            Daarna werd de volledige kast opnieuw netjes en gestructureerd opgebouwd.
-                            Als extra onderdeel werd er ook een kleine loopband geprogrammeerd en geïntegreerd in het systeem.
-                        </p>
-                    </div>
+                <div class="about-photo rotate-left">
+                    <img
+                            src="assets/mijnploeg.jpeg"
+                            alt="Tibo met zijn voetbalploeg"
+                    >
                 </div>
 
-                <div class="p1-col-right">
-                    <img src="assets/kast.jpg" alt="Project foto" class="p1-rotated-img">
 
-                    <div class="p1-bubble">
-                        <h3>Wat heb ik geleerd</h3>
-                        <p>
-                            Tijdens dit project heb ik geleerd om efficiënt samen te werken met anderen, waarbij duidelijke communicatie en taakverdeling belangrijk waren.
-                            Daarnaast heb ik ervaren hoe essentieel het is om ordelijk en gestructureerd te werken om fouten te vermijden en overzicht te behouden.
-                            Tot slot heb ik mijn kritisch denkvermogen ontwikkeld door problemen te analyseren en doordachte oplossingen te bedenken.
-                        </p>
+                <article class="about-card">
+                    <h3>Waarom deze opleiding?</h3>
 
-                    </div>
+                    <p>
+                        Ik koos deze opleiding oorspronkelijk met het doel
+                        om webdesigner te worden, omdat ik altijd
+                        gefascineerd ben geweest door visueel design en
+                        creatieve interfaces.
+                    </p>
+
+                    <p>
+                        Tijdens het eerste semester ontdekte ik echter
+                        dat ik veel meer voldoening haal uit webdevelopment.
+                        Hierbij kan ik niet alleen het ontwerp realiseren,
+                        maar ook de achterliggende functionaliteit bouwen
+                        en optimaliseren.
+                    </p>
+
+                    <p>
+                        Hierdoor ontdekte ik dat ik het liefst werk aan
+                        projecten waarin design en techniek samenkomen.
+                    </p>
+                </article>
+
+
+                <div class="about-photo rotate-right-slight">
+                    <img
+                            src="assets/WWEring.jpeg"
+                            alt="WWE ring"
+                    >
                 </div>
+
+
+                <article class="about-card about-card-full">
+                    <h3>Wie ben ik?</h3>
+
+                    <p>
+                        Ik hou van films, series en WWE, omdat verhalen
+                        en entertainment mij echt aanspreken en me een
+                        moment van ontspanning bieden.
+                    </p>
+
+                    <p>
+                        Daarnaast vind ik rust en plezier in stand-up
+                        comedy, wat me helpt om even te ontsnappen aan
+                        de dagelijkse druk.
+                    </p>
+
+                    <p>
+                        In het dagelijks leven probeer ik rustig en
+                        bedachtzaam te blijven. Ik kan soms droog zijn,
+                        ben soms snel op mijn tenen getrapt en durf af
+                        en toe ook een grote mond te hebben wanneer ik
+                        mijn mening wil laten horen.
+                    </p>
+
+                    <p>
+                        Tegelijkertijd droom ik ervan om ooit naar Amerika
+                        te verhuizen, waar ik hoop nieuwe ervaringen op
+                        te doen en mijn passie voor entertainment en
+                        creativiteit verder te ontwikkelen.
+                    </p>
+                </article>
+
             </div>
-        </div>
-    </div>
-</section>
 
-<section id="project2" class="project-2">
-    <div class="p1-container">
-        <div class="p1-header">
-            <h1 class="p1-main-title">Project 2</h1>
-            <h2 class="p1-sub-title">Scripting – Take-away website</h2>
         </div>
 
-        <div class="p1-centered-content">
-            <div class="p1-layout">
-                <div class="p1-col-left">
-                    <div class="p1-bubble">
-                        <h3>Doel</h3>
-                        <p>
-                            Een take-away website bouwen met behulp van JavaScript, waarbij interactieve functionaliteiten worden ontwikkeld om bestellingen overzichtelijk weer te geven en te verwerken, gecombineerd met een duidelijke en gebruiksvriendelijke lay-out die zorgt voor een vlotte en aangename gebruikerservaring.
-                        </p>
+    </section>
+
+
+    <!-- =========================
+         PROJECT 1
+    ========================== -->
+        <!-- PROJECT 1 -->
+        <section id="project1" class="project">
+            <div class="project-container">
+
+                <header class="project-header">
+                    <span class="project-number">01</span>
+                    <h2>Project 1</h2>
+                    <p>GIP – Industriële kast</p>
+                </header>
+
+                <div class="project-layout">
+
+                    <!-- Linkerkolom: Drie kaarten -->
+                    <div class="project-content">
+
+                        <div class="project-cards-top">
+                            <article class="project-card">
+                                <div class="card-header-icon">
+                                    <div class="card-icon">
+                                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                                    </div>
+                                    <h3>Doel</h3>
+                                </div>
+                                <p>
+                                    Een industriële kast opschonen door bestaande bekabeling overzichtelijk te ordenen, de installatie volledig te herbedraden waar nodig en verouderde of defecte componenten te vervangen.
+                                </p>
+                            </article>
+
+                            <article class="project-card">
+                                <div class="card-header-icon">
+                                    <div class="card-icon">
+                                        <svg viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+                                    </div>
+                                    <h3>Hoe te werk</h3>
+                                </div>
+                                <p>
+                                    Eerst werd er een grondige analyse gemaakt van de onderdelen die vervangen moesten worden. Vervolgens werd overbodige bekabeling verwijderd om meer overzicht en veiligheid te creëren.
+                                </p>
+                                <p>
+                                    Daarna werd de kast gestructureerd opgebouwd en een kleine loopband geprogrammeerd en geïntegreerd.
+                                </p>
+                            </article>
+                        </div>
+
+                        <article class="project-card card-full-width">
+                            <div class="card-header-icon">
+                                <div class="card-icon">
+                                    <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 13l-7-3.82v4.32l7 3.82 7-3.82v-4.32L12 16z"/></svg>
+                                </div>
+                                <h3>Wat heb ik geleerd</h3>
+                            </div>
+                            <p>
+                                Tijdens dit project heb ik geleerd om efficiënt samen te werken met duidelijke communicatie en taakverdeling. Daarnaast is gebleken hoe essentieel het is om ordelijk en gestructureerd te werken om fouten te vermijden.
+                            </p>
+                        </article>
+
                     </div>
 
-                    <div class="p1-bubble">
-                        <h3>Hoe te werk</h3>
-                        <p>
-                            Tijdens dit project heb ik eerst de JavaScript-logica opgebouwd om de functionaliteit van de website te realiseren en alles dynamisch op het scherm te laten verschijnen.
-                            Vervolgens heb ik de code geoptimaliseerd en refactored door functies toe te voegen, zodat deze overzichtelijker, efficiënter en gemakkelijker te onderhouden werd.
-                            Tot slot heb ik de styling en de gebruikerservaring zorgvuldig afgewerkt met CSS, zodat de website niet alleen functioneel, maar ook visueel aantrekkelijk en gebruiksvriendelijk is.
-                        </p>
+                    <!-- Rechterkolom: Mockup Afbeelding -->
+                    <div class="project-media">
+                        <div class="mockup-frame">
+                            <img src="assets/kast.jpg" alt="Industriële elektrische kast">
+                        </div>
                     </div>
+
                 </div>
 
-                <div class="p1-col-right">
-                    <img src="assets/Pizza.jpg" alt="Pizza" class="p1-rotated-img">
-
-                    <div class="p1-bubble">
-                        <h3>Wat heb ik geleerd</h3>
-                        <p>
-                            Tijdens dit project heb ik geleerd om logisch te denken en vooruit te plannen, zodat de oplossingen efficiënt en goed gestructureerd zijn.
-                            Daarnaast heb ik ervaren hoe belangrijk het is om het simpel te houden en niet te veel complexiteit toe te voegen, waardoor de code overzichtelijk en onderhoudbaar blijft.
-                            Bovendien heb ik geleerd om minder te piekeren over kleine problemen en me te focussen op het belangrijkste doel van het project.
-                        </p>
-                    </div>
-                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<section id="project3" class="project-3">
-    <div class="p1-container">
-        <div class="p1-header">
-            <h1 class="p1-main-title">Project 3</h1>
-            <h2 class="p1-sub-title">Jeugdtoernooi</h2>
-        </div>
+        <!-- PROJECT 2 -->
+        <section id="project2" class="project">
+            <div class="project-container">
 
-        <div class="p1-centered-content">
-            <div class="p1-layout">
-                <div class="p1-col-left">
-                    <div class="p1-bubble">
-                        <h3>Doel</h3>
-                        <p>
-                            Een sportief en eerlijk jeugdtoernooi organiseren met de nadruk op plezier, samenwerking en respect, waarbij alle deelnemers gelijke kansen krijgen om zich te ontwikkelen, hun talenten te tonen en samen te genieten van de sport in een positieve en stimulerende omgeving.
-                        </p>
+                <header class="project-header">
+                    <span class="project-number">02</span>
+                    <h2>Project 2</h2>
+                    <p>Scripting – Take-away website</p>
+                </header>
+
+                <div class="project-layout">
+
+                    <div class="project-content">
+
+                        <div class="project-cards-top">
+                            <article class="project-card">
+                                <div class="card-header-icon">
+                                    <div class="card-icon">
+                                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                                    </div>
+                                    <h3>Doel</h3>
+                                </div>
+                                <p>
+                                    Een take-away website bouwen met behulp van JavaScript, waarbij interactieve functionaliteiten worden ontwikkeld om bestellingen overzichtelijk weer te geven en te verwerken.
+                                </p>
+                            </article>
+
+                            <article class="project-card">
+                                <div class="card-header-icon">
+                                    <div class="card-icon">
+                                        <svg viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+                                    </div>
+                                    <h3>Hoe te werk</h3>
+                                </div>
+                                <p>
+                                    Eerst de JavaScript-logica opgebouwd om de functionaliteit van de website te realiseren. Vervolgens de code geoptimaliseerd en gerefactord met functies voor onderhoudbaarheid.
+                                </p>
+                            </article>
+                        </div>
+
+                        <article class="project-card card-full-width">
+                            <div class="card-header-icon">
+                                <div class="card-icon">
+                                    <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 13l-7-3.82v4.32l7 3.82 7-3.82v-4.32L12 16z"/></svg>
+                                </div>
+                                <h3>Wat heb ik geleerd</h3>
+                            </div>
+                            <p>
+                                Ik heb mijn vaardigheden in JavaScript verder ontwikkeld, vooral in het werken met formulieren, arrays en het manipuleren van de DOM. Ook leerde ik beter plannen, structureren en het belang van een gebruiksvriendelijk responsive design.
+                            </p>
+                        </article>
+
                     </div>
 
-                    <div class="p1-bubble">
-                        <h3>Hoe te werk</h3>
-                        <p>
-                            Tijdens de organisatie van het jeugdtoernooi heb ik eerst de datum en locatie zorgvuldig vastgesteld om ervoor te zorgen dat alles goed gepland kon worden.
-                            Vervolgens heb ik een gedetailleerd toernooischema opgesteld zodat alle wedstrijden soepel en eerlijk konden verlopen.
-                            Daarnaast heb ik de vrijwilligers georganiseerd en hun taken duidelijk verdeeld, zodat iedereen wist wat er van hen verwacht werd.
-                            Tot slot heb ik op de dag zelf de begeleiding verzorgd, problemen opgelost waar nodig en gezorgd dat het toernooi op een plezierige en veilige manier verliep voor alle deelnemers.
-                        </p>
+                    <div class="project-media">
+                        <div class="mockup-frame">
+                            <img src="assets/Pizza.jpg" alt="Pizza van de take-away website">
+                        </div>
                     </div>
+
                 </div>
 
-                <div class="p1-col-right">
-                    <img src="assets/Voetbal.jpg" alt="Voetbal" class="p1-rotated-img">
-
-                    <div class="p1-bubble">
-                        <h3>Wat heb ik geleerd</h3>
-                        <p>
-                            Tijdens dit project heb ik geleerd om effectief te plannen en organiseren, zodat alle onderdelen van het toernooi soepel op elkaar aansloten.
-                            Daarnaast heb ik mijn communicatieve vaardigheden kunnen verbeteren door duidelijk af te stemmen met teams, scheidsrechters en vrijwilligers.
-                            Tot slot heb ik mijn verantwoordelijkheidsgevoel versterkt door actief toe te zien op het verloop van het evenement en snel te reageren op onverwachte situaties.
-                        </p>
-                    </div>
-                </div>
             </div>
+        </section>
+
+        <!-- PROJECT 3 -->
+        <section id="project3" class="project">
+            <div class="project-container">
+
+                <header class="project-header">
+                    <span class="project-number">03</span>
+                    <h2>Project 3</h2>
+                    <p>Jeugdtoernooi</p>
+                </header>
+
+                <div class="project-layout">
+
+                    <div class="project-content">
+
+                        <div class="project-cards-top">
+                            <article class="project-card">
+                                <div class="card-header-icon">
+                                    <div class="card-icon">
+                                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                                    </div>
+                                    <h3>Doel</h3>
+                                </div>
+                                <p>
+                                    Een sportief en eerlijk jeugdtoernooi organiseren met de nadruk op plezier, samenwerking en respect. Alle deelnemers kregen gelijke kansen om zich te ontwikkelen.
+                                </p>
+                            </article>
+
+                            <article class="project-card">
+                                <div class="card-header-icon">
+                                    <div class="card-icon">
+                                        <svg viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+                                    </div>
+                                    <h3>Hoe te werk</h3>
+                                </div>
+                                <p>
+                                    Datum en locatie vastgesteld, een toernooischema opgesteld, vrijwilligers georganiseerd en hun taken verdeeld. Op de dag zelf de begeleiding verzorgd en problemen opgelost.
+                                </p>
+                            </article>
+                        </div>
+
+                        <article class="project-card card-full-width">
+                            <div class="card-header-icon">
+                                <div class="card-icon">
+                                    <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 13l-7-3.82v4.32l7 3.82 7-3.82v-4.32L12 16z"/></svg>
+                                </div>
+                                <h3>Wat heb ik geleerd</h3>
+                            </div>
+                            <p>
+                                Tijdens dit project heb ik geleerd om effectief te plannen en communiceren met teams en scheidsrechters. Mijn verantwoordelijkheidsgevoel is versterkt door snel te reageren op onverwachte situaties.
+                            </p>
+                        </article>
+
+                    </div>
+
+                    <div class="project-media">
+                        <div class="mockup-frame">
+                            <img src="assets/Voetbal.jpg" alt="Voetbal tijdens het jeugdtoernooi">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+    <!-- =========================
+         LOCKER ROOM
+    ========================== -->
+
+    <section class="locker-room" aria-label="Wrestler berichten">
+
+        <div class="male-wrestler-container">
+
+            <img
+                    src="assets/wrestler%201.png"
+                    alt="Mannelijke worstelaar"
+                    class="click-figure"
+            >
+
+            <div class="text-balloon-male hidden">
+                De code van Tibo is van een ander niveau.
+                Hij schrijft niet alleen software die werkt,
+                maar software die schaalbaar en kraakhelder is.
+                Een absolute aanwinst voor elk project.
+            </div>
+
         </div>
-    </div>
-</section>
-<section class="locker-room">
-    <div class="male-wrestler-container">
-        <img src="assets/wrestler%201.png" alt="Male Wrestler" class="click-figure">
 
-        <div class="text-balloon-male hidden">
-            de code van Tibo is van een ander niveau.
-            Hij schrijft niet alleen software die werkt, maar software die schaalbaar en kraakhelder is.
-            Een absolute aanwinst voor elk project.
+
+        <div class="female-wrestler-container">
+
+            <img
+                    src="assets/femalewrestler.png"
+                    alt="Vrouwelijke worstelaar"
+                    class="click-figure"
+            >
+
+            <div class="text-balloon-female hidden">
+                "Tibo, je code is misschien goud, maar je design
+                is van de Aldi... Tijd voor een cursusje CSS, vriend!"
+            </div>
+
         </div>
-    </div>
 
-    <div class="female-wrestler-container">
-        <img src="assets/femalewrestler.png" alt="Female Wrestler" class="click-figure">
+    </section>
 
-        <div class="text-balloon-female hidden">
-            "Tibo, je code is misschien goud, maar je design is van de Aldi... Tijd voor een cursusje CSS, vriend!
-        </div>
-    </div>
+</main>
 
 
-</section>
-<footer>
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer class="footer">
+
     <div class="footer-content">
-        <p>&copy; 2026 Tibo's Portfolio. All rights reserved.</p>
-        <p>Email:tibostaels@gmail.com
+
+        <p>
+            &copy; 2026 Tibo's Portfolio. All rights reserved.
         </p>
+
+        <p>
+            Email:
+            <a href="mailto:tibostaels@gmail.com">
+                tibostaels@gmail.com
+            </a>
+        </p>
+
     </div>
+
 </footer>
-
-
-
-
-
-
-
 
 
 </body>
